@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAMY</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+        .head span {
+            position: relative;
+            display: inline-block;
+            left: 25%;
+            margin-left: 50px;
+        }
+        .head .f {
+            color: white;
+            font-size: large;
+            position: relative;
+        }
+        .head {
+            background-image: url(images/bj1.png);
+            position: relative;
+            background-color: rosybrown;
+            height: 814px;
+            background-repeat: no-repeat;
+        }
+        .head .img9 {
+            left: 25%;
+            top: 40%;
+            position: absolute;
+        }
+        .head .img {
+            padding: 20px;
+            background-color: rgb(187, 21, 68);
+        }
+        .welcome {
+            background-color:lightgrey;
+            height: 466px;
+            position: relative;
+        }
+        .welcome .img{
+            background-image: url(images/wel.png);
+            display:inline-block;
+            height: 466px;
+            width: 400px;
+            position: relative;
+        }
+        .welcome .txt {
+            width: 400px;
+            height: 466px;
+            display: inline-block;
+            left: 500px;
+            position: relative;
+        }
+        .welcome .txt div {
+            top: 10%;
+            position: relative;
+        }
+        .welcome .wel {
+            position: relative;
+            background-color: white;
+            width: 900px;
+            height: 466px;
+            left: 23%;
+            bottom: -10%;
+        }
+        .welcome .video {
+            position: absolute;
+            background-image: url(images/vbj.png);
+            width: 300px;
+            height: 200px;
+            bottom: -40px;
+            left: 150px;
+        }
+        .welcome .video img{
+            position: relative;
+            top: 30%;
+            left: 40%;        }
+        .welcome p {
+            position: relative;
+            top: 25%;
+            right: 10%;
+        }
+        .series {
+            position: relative;
+            margin-top: 100px;
+            height: 600px;
+        }
+        .series .title {
+            position: relative;
+            background-image: url(images/LAMY各系列.png);
+            background-repeat: no-repeat;
+            height: 45px;
+            width: 301px;
+            left: 40%;
+            top: 7%;
+        }
+        .series span {
+            display: inline-block;
+            width: 400px;
+            margin-top: 7%;
+            margin-left: 6.5%;
+            text-align: center;
+            line-height: 30px;
+        }
+        .series .know {
+            position: relative;
+            width: 150px;
+            height: 40px;
+            background-color: black;
+            left: 47%;
+            top: 10%;
+            text-align: center;
+            padding-top: 20px;
+            color: white;
+        }
+        .pic {
+            background-color: lightgrey;
+            height: 400px;
+            position: relative;
+            background-image: url(images/p24964153.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .saying {
+            height: 400px;
+            position: relative;
+            background-color: gray;
+        }
+        .saying .title {
+            position: relative;
+            background-image: url(images/What\ people\ are\ saying__.png);
+            top: 15%;
+            height: 75px;
+            width: 300px;
+            left: 40%;
+        }
+        .saying .txt {
+            position: relative;
+            bottom: -75px;
+            background-color:white;
+            height: 250px;
+            width: 900px;
+            left: 20%;
+            text-align: center;
+        }
+        .saying .tx {
+            width: 71px;
+            position: relative;
+            height: 71px;
+            background-image: url(images/IMG_20180210_144432.png);
+            left: 50%;
+            top: 10%;
+            text-align: center;
+            font-size: 1cm;
+        }
+        
+        .saying span {
+            display: inline-block;
+            height: 20px;
+            position: relative;
+            width: 100px;
+            background-color: lightgrey;
+            top: 25%;
+            margin: 20px;
+        }
+        .saying .s1 {
+            background-color: grey;
+        }
+        .product {
+            position: relative;
+            height: 800px;
+            top: 75px;
+        }
+        .product .title {
+            position: relative;
+            height: 75px;
+            width: 200px;
+            background-image: url(images/Our\ products.png);
+            background-repeat: no-repeat;
+            left: 45%;
+            top: 5%;
+        }
+        .product span {
+            display: inline-block;
+            height: 550px;
+            width: 249px;
+            background-color: #fff;
+            margin: 50px;
+            left: 17%;
+            position: relative;
+        }
+        .product .buy {
+            position: relative;
+            width: 200px;
+            height: 50px;
+            background-color:rgb(75, 42, 27);
+            left: 45%;
+            text-align: center;
+            line-height: 1.2cm;
+            display: block;
+            color: white;
+        }
+        .product span .p1 {
+            width: 249px;
+            height: 227px;
+            background-image: url(images/p1.png);
+        }
+        .product span .p2 {
+            width: 249px;
+            height: 303px;
+            background-image: url(images/p2.png);
+        }
+        .product span .p5 {
+            width: 249px;
+            height: 227px;
+            background-image: url(images/p5.png);
+        }
+        .product span .p6 {
+            width: 249px;
+            height: 303px;
+            background-image: url(images/p6.png);
+        }
+        .product span .p3 {
+            width: 249px;
+            height: 372px;
+            background-image: url(images/LAMY_joy.png);
+        }
+        .product span .p4 {
+            width: 249px;
+            height: 163px;
+            background-image: url(images/p4.png);
+        }
+        .introduce {
+            height: 400px;
+            background-color: rgb(76, 73, 73);
+            position: relative;
+            top: 100px;
+        }
+        .introduce div {
+            height: 150px;
+            width: 1000px;
+            left: 20%;
+            top: 30%;
+            position: relative;
+            margin-top: 10px;
+            background-color: white
+        }
+        .end {
+            height: 800px;
+            top: 425px;
+            position: relative;
+            background-color: lightgreen;
+        }
+        .end div {
+            width: 200px;
+            height: 50px;
+            background-color: rgb(245, 56, 88);
+            position: relative;
+            left: 45%;
+            text-align: center;
+            top: -100px;
+            padding-top: 10px;
+            color: white;
+            font-size: 25px;
+        }
+        .ps {
+            height: 20px;
+            background-color: rgb(59, 57, 57);
+            position: relative;
+            top: 400px;
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+        }
+        .introduce .img1 {
+            background-image: url(images/i1.png);
+            height: 121px;
+            width: 377px;
+            margin-top: 15px;
+            margin-left: 20px;
+            display: inline-block;
+        }
+        .introduce .img3 {
+            background-image: url(images/i3.png);
+            height: 121px;
+            width: 377px;
+            margin-top: 15px;
+            margin-left: 20px;
+            display: inline-block;
+        }
+        .introduce .img2 {
+            background-image: url(images/i2.png);
+            height: 121px;
+            width: 377px;
+            margin-top: 15px;
+            margin-left: 20px;
+            display: inline-block;
+        }
+        .introduce .txt1 {
+            display: inline-block;
+            background-image: url(images/You\ make\ millions\ of\ decisions\ that\ is\ \ mean\ nothing，and\ then\ o.png);
+            position: relative;
+            top: -20px;
+            width: 426px;
+            height: 54px;
+        }
+        .introduce .txt2 {
+            display:inline-block;
+            background-image: url(images/It\'s\ sad\ when\ you\ realize\ you\ aren\'t\ is\ as\ \ important\ \ to\ someo.png);
+            width: 401px;
+            height: 58px;
+            position: relative;
+            top: -20px;
+        }
+        .introduce .txt3 {
+            display: inline-block;
+            background-image: url(images/Love\ is\ unequal\,\ so\ don\'t\ count\ how\ \ much\ one\ contributes\,\ and_.png);
+            width: 404px;
+            height: 54px;
+            position: relative;
+            top: -20px;
+        }
+        .end {
+            background-image: url(images/CUTE\ useful.png);
+            background-position: center;
+            height: 798px;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <span class="f">新品推荐</span>
+        <span class="f">在线购买产品</span>
+        <span class="img"><img src="images/logo.png"/></span>
+        <span class="f">企业礼包</span>
+        <span class="f">品牌介绍</span>
+        <div class="img9"><img src="images/The best pen is  just LAMY.png"/></div>
+    </div>
+    <div class="welcome">
+        <div class="wel">
+            <span class="img">
+                <div class="video">
+                    <img src="images/play.png" />
+                </div>
+            <span>
+            <span class="txt">
+                <div><img src="images/Welcome to Lamy.png" /></div>
+            <p>德国书写工具品牌LAMY始创人C.Josef Lamy于1930年在海德堡创立了欧瑟斯墨水笔制造厂,1952年,崭露头角的LAMY流线型墨水笔，震撼问世，彰显公司的创新敏锐触觉。1966年终于打</p><br /><br />
+            <p>造出令人耳目一新的现代经典之作-LAMY 2000系列。产品撮合了。聚碳酸酯与不锈钢材质，绝妙的配搭，使之从芸芸众生的书写工具中脱颖而出，时至今日，仍然在市场具有影响力</p>
+            </span>
+        </div>
+    </div>
+    <div class="series">
+        <div class="title"></div>
+        <span>
+            【恒星系列  墨水笔】<br /><br />
+            LAMY恒星系列延续了LAMY<br />的时尚造型，打造出锦上添花的极致品质<br />此系列全部均由氧化<br />独特的凹陷是笔撵以及弹性铜线笔夹<br />丰富的颜色让LAMY恒星系列突破了传统<br />散发着无限的青春魅力
+        </span>
+        <span>【狩猎系列限量色墨水笔】 <br /> <br />
+            色彩丰富，颜色亮座不仅是可以作为书<br />写工具，同样是很好的装饰品<br />宽大的笔夹设计，可随时夹在包带、牛仔裤.<br />T恤袖口上，让您感创意方便的携带方式<br />笔身通体材质采用车用强力ABS材料</span>
+        <span>【喜悦系列美术笔】<br /><br />
+            用以绘图、写艺术字、艺术签名<br />扁平状的笔尖设计，适合书写艺术字<br />立体感极佳,1、1.5、1.9三种笔尖可供选择<br />可书写粗细不等的立体字，让您随时<br />感受变化的乐趣复古的笔杆设计<br />经典又与众不同，显示出独特的欣赏品味</span>
+        <div class="know">了解详情 》》</div>
+    </div>
+    <div class="pic">
+        
+    </div>
+    <div class="saying">
+        <div class="title"></div>
+        <div class="txt">
+            <div class="tx"></div>
+            <p><br /><br />使用令人难以置信的生产技术和坚持极高的水平的精准要求，仅使用一种<br />材质，也足以成就出这款永恒的设计，产品本身是体现不同加工程序和<br />制造工艺。手工打磨的亚光拉丝表面充分体现了品牌对细节的注重。</p>
+            <span class="s1"></span>
+            <span></span>
+            <span></span>    
+        </div>
+    </div>
+    <div class="product">
+        <div class="title"></div>
+        <span>
+            <div class="p1"></div>
+            <div class="p2"></div>
+        </span>
+        <span>
+            <div class="p3"></div>
+            <div class="p4"></div>
+        </span>
+        <span>
+            <div class="p5"></div>
+            <div class="p6"></div>
+        </span>
+        <a class="buy"; href="#">戳我速购>></a>
+    </div>
+    <div class="introduce">
+        <div class="pro1">
+            <span class="img1"></span>
+            <span class="txt1"></span>
+        </div>
+        <div class="pro2">
+            <span class="img2"></span>
+            <span class="txt2"></span>
+        </div>
+        <div class="pro3">
+            <span class="img3"></span>
+            <span class="txt3"></span>
+        </div>
+    </div>
+    <div class="end">
+        <div>新品推荐>></div>
+    </div>
+    <div class="ps">
+        -凌美中国  2015  版权所有  不得转载
+    </div>
+</body>
+</html>
