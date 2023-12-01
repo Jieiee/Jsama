@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        .total {
+            width: 600px;
+            height: 1060px;
+            background-image: url(images/Base.png);
+            left: 28%;
+            position: relative;
+        }
+        span {
+            display: inline-block;
+            position: relative;
+        }
+        a {
+            display: inline-block;
+            position: relative;
+            text-decoration: none;
+        }
+        .head .iconfont1 {
+            left: 2%;
+            top: 5%;
+        }
+        .head .iconfont1:hover {
+            color: lightgrey;
+        }
+        .head .iconfont2 {
+            left: 58.5%;
+            margin-top: 2%;
+        }
+        .head .iconfont2:hover {
+            color: lightgrey;
+        }
+        .head .details {
+            font-size: 34px;
+            color:rgb(240, 232, 232);
+            left: 32%;
+        }
+        .addpic .iconfont3 {
+            margin-top: 120px;
+            left: 37%;
+            position: relative;
+        }
+        .addpic .iconfont3:hover {
+            color: lightgrey;
+        }
+        .addpic .txt {
+            left: 16.7%;
+            color: rgb(238, 232, 232);
+            font-weight: 600;
+        }
+        .addinformation {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            height: 300px;
+            top: 7%;
+            justify-content: space-between;
+        }
+        .addinformation div {
+            left: 20%;
+            background-color: transparent;
+            position: relative;
+            width: 400px;
+            height: 50px;
+            font-size: 25px;
+            color: azure;
+        }
+        .submit input {
+            left: 27%;
+            position: relative;
+            width: 300px;
+            height: 50px;
+            font-size: 25px;
+            font-weight: 550;
+            background-color: white;
+            border-radius: 50px;
+            color: rgb(136, 114, 148);
+        }
+        .submit input:hover {
+            background-color: lightgrey;
+        }
+        .submit {
+            height: 50px;
+            top: 15%;
+            position: relative;
+        }
+        .bm {
+            position: relative;
+            top: 17%;
+            left: 35%;
+        }
+        input {
+            background-color: transparent;
+            border: transparent;
+            width: 200px;
+            height: 50px;
+            outline: none;
+        }
+        .bm a {
+            color: turquoise;
+            text-decoration: none;
+        }
+        .bm span {
+            color: whitesmoke;
+        }
+        ::-ms-reveal {
+            background-image: url(images/Show_.png);
+            width: 40px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/iconfont.css">
+</head>
+<body>
+    <div class="total">
+        <div class="head">
+            <a class="iconfont1" href="#">&#xe66b;</a>
+            <span class="details">Sign Up</span>    
+            <a class="iconfont2" href="#">&#xe634;</a>    
+        </div>
+        <div class="addpic">
+            <a class="iconfont3" href="#">&#xeb89;</a>
+            <span class="txt">PHOTO</span>
+        </div>
+        <div class="addinformation">
+            <div class="1name">First Name: <input type="text"><hr /></div>
+            <div class="2name">Last Name: <input type="text"><hr /></div>
+            <div class="email">Email Address: <input type="text"><hr /></div>
+            <div class="password">Password: <input type="password"><hr /></div>
+        </div>
+        <div class="submit"><input type="submit" value="Sign Up" /></div>
+        <div class="bm"><span>Allready a member?</span><a href="#">Sign In</a></div>
+    </div>
+</body>
+</html>
